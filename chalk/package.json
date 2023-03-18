@@ -1,0 +1,16 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "jay tarsariya",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mr.tarsariya",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "nodemon": "^2.0.20",
+    "yargs": "^17.7.1"
+  }
+}
