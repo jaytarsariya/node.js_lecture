@@ -1,1 +1,0 @@
-//what is the defference between call and apply ?
