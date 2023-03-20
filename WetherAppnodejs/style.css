@@ -1,0 +1,109 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+    
+     body{
+         background:#f3f2ef;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         height: 100vh;
+         width: 100vw;
+     }
+
+     html,
+     body{
+        font-size: 62.5%;
+        height: 100%;
+     }
+
+     html {
+        background: #eee;
+     }
+
+     .box{
+        width: 20vw;
+        height: 60vh;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.2rem rgba(0, 0, 0, 0.2);
+        background: #000000;
+        position: relative;
+        overflow: hidden;
+        transform: translate3d(0,0,0);
+        min-width: 20rem;
+        min-height: 35rem;
+     }
+
+      .wave {
+        opacity: 0.3;
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        background: white;
+        width: 50rem;
+        height: 50rem;
+        margin-left: -25rem;
+        margin-top: -25rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation:drift 3000ms infinite linear;
+        z-index: 1;
+     }
+
+     .wave-three{
+        animation: drift 5000ms infinite linear;
+        z-index: 2 !important;
+        opacity: 0.2;
+      }
+
+      .location{
+        margin-top: 1.5rem;
+        text-align: center;
+        font-weight: 800;
+        font-size: 3rem;
+        font-weight: 60;
+        
+      }
+      .fa-street-view{
+        animation: rotates 2s linear infinite alternate;
+
+      }
+      @keyframes rotates {
+        from{
+            transform: translateX(-0.5rem);
+        }
+        to{
+            transform: translateX(0.5rem);
+        }
+      }    
+      #date{
+        text-align: center;
+        margin-top: 0.5rem;
+        color: #57606f;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      
+      .temp{
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      .tempmin_max{
+        text-align: center;
+        margin-top: 0.3rem;
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #57606f;
+      }
+      
+      #wethercon{
+        height: 55%;
+      }
